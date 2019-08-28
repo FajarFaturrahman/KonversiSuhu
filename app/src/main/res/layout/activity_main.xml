@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/labelCelcius"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Celcius"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/edit_Celcius"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelCelcius"
+        android:layout_toRightOf="@+id/labelCelcius"
+        android:layout_marginLeft="20dp"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btn_konversi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_below="@id/edit_Celcius"
+        android:text="Konversi"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="@color/colorAccent" />
+
+    <TextView
+        android:id="@+id/labelKelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="KELVIN"
+        android:textSize="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/btn_konversi" />
+
+    <EditText
+        android:id="@+id/edit_Kelvin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelKelvin"
+        android:layout_toRightOf="@+id/labelKelvin"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@id/btn_konversi"/>
+
+    <TextView
+        android:id="@+id/labelFarenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FARENHEIT"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/labelKelvin"/>
+
+    <EditText
+        android:id="@+id/edit_Farenheit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelFarenheit"
+        android:layout_toRightOf="@+id/labelFarenheit"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@id/edit_Kelvin"/>
+
+    <TextView
+        android:id="@+id/labelReamur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REAMUR"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/labelFarenheit"/>
+
+    <EditText
+        android:id="@+id/edit_Reamur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/labelReamur"
+        android:layout_toRightOf="@+id/labelReamur"
+        android:layout_marginLeft="41dp"
+        android:layout_below="@id/edit_Farenheit"/>
+
+</RelativeLayout>
